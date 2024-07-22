@@ -3,6 +3,10 @@ debug.log
 # Created by https://www.toptal.com/developers/gitignore/api/hugo,vscode
 # Edit at https://www.toptal.com/developers/gitignore?templates=hugo,vscode
 
+.env
+.env.build
+node_modules
+
 ### Hugo ###
 # Generated files by hugo
 /public/
