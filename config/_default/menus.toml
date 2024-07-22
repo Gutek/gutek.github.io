@@ -26,12 +26,12 @@
 
 [[social]]
     identifier = "twitter"
-    name = "Twitter"
-    url = "#"
+    name = "x"
+    url = "https://x.com/gutek"
     weight = 1
 
 [[social]]
     identifier = "github"
-    name = "GitHub"
-    url = "#"
+    name = "github"
+    url = "https://github.com/gutek"
     weight = 2

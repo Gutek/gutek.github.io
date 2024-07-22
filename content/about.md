@@ -1,6 +1,6 @@
 +++
 title = 'about me, myself & I'
-date = 2024-07-22T14:31:27+02:00
+# date = 2024-07-22T14:31:27+02:00
 draft = false
 +++
 
