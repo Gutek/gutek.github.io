@@ -8,69 +8,13 @@
   name="description"
   content="{{ if .IsPage }}{{ or .Params.description .Summary }}{{ else if .IsHome }}{{ .Site.Params.description }}{{ else if .IsNode }}{{ or .Params.description .Summary }}{{ end }}"
 />
+
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
 <link rel="canonical" href="{{ .Permalink }}" />
 <link rel="robots" href="/robots.txt" />
 
-<link rel="icon" type="image/x-icon" href="{{ $favicon.RelPermalink }}" />
-
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const theme = localStorage.getItem('theme');
-
-      if (!theme || theme === 'light') {
-        setTheme('light');
-      } else {
-        setTheme(theme);
-      }
-    });
-
-    function setTheme(theme) {
-      const html = document.querySelector('html');
-      localStorage.setItem('theme', theme);
-
-      if (theme === 'light') {
-        if (html.classList.contains('dark')) {
-          document.querySelector('html').classList.remove('dark');
-        }
-
-        document.querySelector('.theme-icon.light').style.display = 'none';
-        document.querySelector('.theme-icon.dark').style.display = 'block';
-      } else {
-        if (!html.classList.contains('dark')) {
-          document.querySelector('html').classList.add('dark');
-        }
-
-        document.querySelector('.theme-icon.dark').style.display = 'none';
-        document.querySelector('.theme-icon.light').style.display = 'block';
-      }
-    }
-
-    function toggleTheme() {
-      const theme = localStorage.getItem('theme');
-
-      if (theme === 'light') {
-        setTheme('dark');
-      } else {
-        setTheme('light');
-      }
-    }
-  </script>
-
-{{ if .Site.Config.Services.GoogleAnalytics.ID}}
-<!-- Google Analytics -->
-<script
-  defer
-  src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Config.Services.GoogleAnalytics.ID }}"
-></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', '{{ .Site.Config.Services.GoogleAnalytics.ID }}');
-</script>
-<!-- End Google Analytics -->
-{{ end }}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default `en` }}" class="scroll-smooth dark">
+<html lang="{{ .Site.LanguageCode | default `en` }}" class="scroll-smooth">
   <head>
     {{- partial "head/index" . -}}
   </head>
@@ -7,7 +7,7 @@
   <body class="max-w-screen-md mx-auto px-2">
     <div class="header">
       {{ partial "header/index" . }}
-      {{ partial "header/theme-button" . }}
+      <!-- { partial "header/theme-button" . } -->
     </div>
 
     <main id="content">

@@ -2,11 +2,20 @@ baseURL = 'https://localhost/'
 copyright = "{year}" # To make 2007 - 2022. Just add before {year} example: 2007 - {year}
 languageCode = 'en-US'
 defaultContentLanguage = 'en'
-theme = 'enchanted-lowkey'
 title = 'thoughts'
 enableRobotsTXT = true
+enableGitInfo = true
 summaryLength = 15
 paginate = 5
+
+[build]
+  noJSConfigInAssets = true
+  [build.buildStats]
+    enable = true
+
+[imaging]
+  # JPEG and WebP quality
+  quality = 90
 
 [permalinks]
   posts = "/posts/:year/:month/:title/"
