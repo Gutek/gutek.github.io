@@ -1,6 +1,6 @@
 # thoughts by gutek
 
-thoughts.gutek.pl - blog about things and stuff that does not fit somehow into https://blog.gutek.pl
+thoughts.gutek.pl - blog about things and stuff that does not fit somehow into [my old/polish blog](https://blog.gutek.pl).
 
 ## blog content license
 
