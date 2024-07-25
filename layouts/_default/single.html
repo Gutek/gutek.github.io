@@ -4,6 +4,7 @@
   <header class="flex flex-col gap-2">
     <h2 class="title-large">{{ .Title }}</h2>
 
+    {{ if .Date }} 
     <div class="meta">
       {{/* Publish date */}}
       <time datetime="{{ .PublishDate }}" title='{{ .PublishDate.Format "Mon, Jan 2, 2006, 3:04 PM MST" }}'>
@@ -19,6 +20,7 @@
         {{ end }}
       {{ end }}
     </div>
+    {{ end}}
   </header>
 
   {{ partial "single/table-of-contents" . }}
