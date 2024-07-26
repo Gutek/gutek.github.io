@@ -30,6 +30,7 @@
   {{ partial "single/comments/index" . }}
 
   <footer>
+    {{ partial "utils/repository-links.html" (dict "action" "edit" "page" .) }}
     {{ with (.GetTerms "tags") }}
       <div class="pb-14 taxonomy-list tags-list">
       {{ range . }}

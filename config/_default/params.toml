@@ -13,6 +13,13 @@ favicon = "icons/favicon.ico"
 # disqus is a comment system. see https://disqus.com
 disqusShortname = ""
 
+[repository] 
+    branch = 'main'
+    owner = 'gutek'
+    service = 'github'
+    repo = 'gutek.github.io'
+    urlPatternEdit = 'https://github.com/%s/%s/edit/%s/%s'
+
 [emoji]
 enableEmoji = true
 
