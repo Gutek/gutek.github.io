@@ -5,16 +5,16 @@
   </head>
 
   <body class="max-w-screen-md mx-auto px-2">
-    <div class="header">
-      {{ partial "header/index" . }}
-      <!-- { partial "header/theme-button" . } -->
-    </div>
+    {{/* HEADER */}}
+    {{partial "header/index" . }}
 
+    {{/* CONTENT */}}
     <main id="content">
       {{- block "main" . -}}
       {{- end }}
     </main>
 
+    {{/* FOOTER */}}
     {{- partial "footer/index" . -}}
   </body>
 </html>

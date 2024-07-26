@@ -1,4 +1,4 @@
 ---
 title: "posts"
-header: "latest posts" # Optional
+header: "posts" # Optional
 ---

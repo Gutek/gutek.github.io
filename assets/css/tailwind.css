@@ -369,4 +369,8 @@
   .title-small {
     @apply text-2xl font-extrabold text-gray-900 dark:text-gray-300;
   }
+
+  #site-title small {
+    @apply text-sm font-normal
+  }
 }
