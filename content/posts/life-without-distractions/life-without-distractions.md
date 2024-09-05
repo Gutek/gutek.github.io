@@ -3,7 +3,7 @@ title: "life without distractions"
 date: 2024-09-05T16:15:29+02:00
 draft: false # Set 'false' to publish
 tableOfContents: false # Enable/disable Table of Contents
-description: 'when you feel like you are different but are you? at the end, everyone is different'
+description: 'i was trying to buy plane tickets and learnt that elephants cant jump'
 tags:
   - me
   - career
