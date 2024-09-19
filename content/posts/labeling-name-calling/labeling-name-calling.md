@@ -1,6 +1,6 @@
 ---
 title: "labeling / name calling"
-date: 2024-09-19T11:15:29+02:00
+date: 2024-09-19T11:12:59+02:00
 draft: false # Set 'false' to publish
 tableOfContents: false # Enable/disable Table of Contents
 description: 'how many times can you be called an idiot before you start believing you are?'
