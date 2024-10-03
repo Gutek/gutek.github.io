@@ -27,8 +27,6 @@
 
   <section>{{ .Content | emojify }}</section>
 
-  {{ partial "single/comments/index" . }}
-
   <footer>
     {{ partial "utils/repository-links.html" (dict "action" "edit" "page" .) }}
     {{ with (.GetTerms "tags") }}
@@ -41,6 +39,10 @@
       </div>
     {{ end }}
   </footer>
+
+  {{ partial "single/comments/index" . }}
+
+  
 </article>
 
 {{ end }}
